@@ -1,0 +1,56 @@
+.title {
+    color: aliceblue;
+    font-family: 'Lilita One', cursive;
+    margin-top: 4%;
+    /*Este comando separa las letras para que no estén muy pegadas*/
+    letter-spacing: 4px;
+    /*Para agrandar el texto*/
+    font-size: 60px;
+}
+.author {
+    color: aliceblue;
+    font-family: 'Lilita One', cursive;
+    margin-top: -20%;
+    /*Este comando separa las letras para que no estén muy pegadas*/
+    letter-spacing: 4px;
+    /*Para agrandar el texto*/
+    font-size: 40px;
+}
+.app {
+    background-image: url(/images/bg1.png);
+    background-size: cover;
+    background-position: center;
+    /*Con la siguiente instrucción le ordeno a que el color que decreto ocupe
+    toda la pantalla*/
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.app.bg1 {
+    background-image: url(/images/bg1.png);
+}
+
+.app.bg2 {
+    background-image: url(/images/bg2.png);
+}
+
+.app.bg3 {
+    background-image: url(/images/bg3.png);
+}
+
+.app.bg4 {
+    background-image: url(/images/bg4.png);
+}
+
+
+.app__container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    justify-items: center ;
+    width: main(100%, 300% );
+    /*Paddin separa los elementos de los bordes*/
+    padding: 0 10px
+}

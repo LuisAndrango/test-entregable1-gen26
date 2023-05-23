@@ -1,0 +1,29 @@
+/*Más o menos le entendí que es para que se ajusten a la medida de la imaguen  */
+html {
+  box-sizing: border-box;
+}
+/*así heredo la configuración del box-sizing: border-box a todos los elementos*/
+*, *::after, *::before {
+  box-sizing: inherit; /*inherit significa heredar y con esta configuración
+   aplico lo del Html a todos los elementos */
+}
+/*Para eliminar el marguen que viene con defecto */
+body {
+  margin: 0;
+}
+
+/*Todos los textos vienen con un margen por defecto y lo que hago aquí*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/*Con esto estoy estoy configurando que las imaguenes
+ crescan hasta el contenedor padre y no hasta la configuración por defecto*/
+img {
+  max-width: 100%;
+}
